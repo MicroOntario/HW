@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<title>Nails&Beauty</title>
+ <style type="text/css">
+
+ /*for all*/	
+/**:after, *:before {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: .5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
+}*/
+ul {
+list-style: none;
+}
+a {
+text-decoration: none;
+outline: none;
+}
+img {
+display: block;
+width: 100%;
+}
+h1, h2 {
+font-family: 'Indie Flower', cursive;
+font-size: 70px;
+font-weight: normal;
+letter-spacing: 1px;
+}
+h3, h4 {
+font-family: 'Fahkwang', sans-serif;
+font-size: 40px;
+font-weight: normal;
+letter-spacing: 1px;
+}
+body {
+font-family: 'Fahkwang', sans-serif;
+font-size: 15px;
+line-height: 1;
+color: black;
+background: white;
+}
+
+/*баннер*/
+.banner{
+ width: 1350px;
+ height:900px;
+ background-image: url(C:\Users\Таня\Desktop\ITEA\Websait\banner.jpg);
+ background-size: cover;
+ border: 0px solid black;
+}
+
+/*меню*/
+.container {
+background: #BC8F8F;	
+width: 100%;
+max-width: 1350px;
+height: 50px;
+padding: 0 -11px;
+} 
+
+/* логотип */
+.logo {
+display: block; 
+float: left;
+margin-left: 50px;
+margin-top: 15px;
+
+}
+#menu {
+float: right;
+}
+#menu li {
+display: inline-block;
+margin-right: 50px;
+}
+#menu a {
+color: white;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 600;
+display: block;
+line-height: 100px;
+}
+#menu a:hover {
+color: #FFE4E1;
+}
+#menu li:last-child  {
+margin-right: 30px;
+}
+#menu.active {
+max-height: 123px;
+}
+
+/*button*/
+.btn {
+	position: relative;
+    overflow: hidden;
+    z-index: 1;
+	padding: 10px 40px;
+	margin: 0 20px;
+	font-family: 'Fahkwang', sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+    color: white;
+    font-size: 15px;    
+    text-transform: uppercase;
+	background: #BC8F8F;
+	border-width: 0;
+    box-shadow: 5px 5px 0 #532831;
+	outline: none;
+	cursor: pointer;
+    transition: 1.5s;
+}
+.btn:before,
+.btn:after {
+	content: "";
+	position: absolute;  
+    height: 200px;
+    left: -50%;
+    margin-top: -100px;    
+    top: 50%;
+    width: 200px;
+	border-radius: 50%;
+    opacity: 0.3;
+    z-index: -1;
+    transform: scale(0);
+}
+.btn:before {
+	background: #ffeede;   
+    transition: .8s ease-out;
+}
+.btn:after {   
+    transition: .4s ease-in .3s;
+}
+.btn:hover {
+    color: #BC8F8F;
+}
+.btn:hover:before,
+.btn:hover:after{
+    opacity: 1;
+    transform: scale(4);
+}
+
+/*Блок Послуги*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.post-wrap {
+	max-width: 1350px;
+	margin: 100px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.post-item {
+	padding: 20px;	
+}
+.post-item-wrap {
+	background: #F7F7F2;
+	position: relative;	 
+}
+.post-item-wrap:after {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+	z-index: -1;
+	background: #BC8F8F;
+	transform: rotate(1deg);
+	transform-origin: left bottom;
+    transition: .3s ease-in-out;	
+}
+.post-item-wrap:hover:after {
+    top: 5px;
+    left: 5px;
+	transform: rotate(2deg);
+}  
+.post-link {
+	text-decoration: none;
+	display: block;
+	padding: 30px; 
+}
+.post-title {
+	color: #33261D;
+	margin-bottom: 15px;
+	transition: .3s ease-in-out;
+}
+.post-item-wrap:hover .post-title {
+	color: #BC8F8F;
+}
+.post-content {
+	color: #A69888;
+	font-size: 14px;
+	background-image: center;
+	widows: 150px;
+	height: 90px;
+}
+@media (min-width: 768px) {
+	.post-item {
+		flex-basis: 50%;
+		flex-shrink: 0;				
+	}
+}
+@media (min-width: 960px) {
+	.post-item {
+		flex-basis: 33.333333333%;			
+	}
+
+/*футер*/
+
+.container footer {
+ background: #BC8F8F;
+ width: 100%;
+ max-width: 1350px; 
+ height: 50px;
+ margin: 0 auto;
+
+}
+#footer {
+float: center;
+}
+#footer li {
+display: inline-block;
+margin-right: 100px;
+}
+#footer a {
+color: white;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 600;
+line-height: 50px;
+}
+
+ </style>
+</head>
+<header>
+    <nav class="container">
+      <a class="site-logo"><a class="logo" a href="#"><img src="C:\Users\Таня\Desktop\ITEA\Websait\logo.png" alt="logo"></a>
+      <ul id="menu">
+        <li><a href="">ПРО НАС</a></li>
+        <li><a href="">ПОСЛУГИ</a></li>
+        <li><a href="">КОНТАКТИ</a></li>
+      </ul>
+    </nav>
+    	
+    </header>
+ <body>	
+    	<div class="container">
+    	<div class="banner" ><img src="C:\Users\Таня\Desktop\ITEA\Websait\banner.jpg" 
+            alt="banner"></div>
+            <div style="margin-top: -600px; padding-left: 30px; text-align: left;
+             color: #696969">
+    <h1>Сотні кольорів</h1><br/>
+    <h3>Органічне покриття для нігтів<br/>
+    <h3>Професійне обладнання<br/>
+     Ідеальні брови та вії </h3><br/><br/></div>
+
+     <button class="btn">Відправити заявку</button>
+
+
+<div class="post-wrap">
+	<div class="post-item">
+		<div class="post-item-wrap">
+			<a href="" class="post-link">
+				<h3 class="post-title">Манікюр і педикюр</h3>
+				<p class="post-content">здесь будет фото</p>
+			</a>			
+		</div>
+	</div>
+	
+	<div class="post-item">
+		<div class="post-item-wrap">
+			<a href="" class="post-link">
+				<h3 class="post-title">Ідеальні брови</h3>
+				<p class="post-content">здесь будет фото</p>
+			</a>			
+		</div>
+	</div>
+	
+	<div class="post-item">
+		<div class="post-item-wrap">
+			<a href="" class="post-link">
+				<h3 class="post-title">Ламінування вій</h3>
+				 <p class="post-content">здесь будет фото</p>
+			</a>			
+		</div>
+	</div>
+
+<footer>
+  <div class="container footer">
+  	<ul id="footer">
+     <li><a href="">Київ, бул. Кольцова 14У</a></li>
+        <li><a href="">+38 067 276 3242</a></li>
+        <li><a href="">Ми у соцмережах:</a></li>
+</ul>
+  </div>
+
+</footer>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.0276431128295!2d30.37795091518927!3d50.421956597299406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb939714cf83%3A0x8c54b57bf7072962!2z0LHRg9C7LiDQmtC-0LvRjNGG0L7QstCwLCAxNNCjLCDQmtC40LXQsiwgMDMxOTQ!5e0!3m2!1sru!2sua!4v1550172519388" width="1350" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+</body>
+</html>
